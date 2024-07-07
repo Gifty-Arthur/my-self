@@ -15,7 +15,9 @@ function Home() {
   return (
     <div
       className={`${
-        theme === "dark" ? " bg-tertiary text-white" : "bg-custom3 text-black"
+        theme === "dark"
+          ? " bg-tertiary text-white"
+          : "bg-custom3 text-black h-[7777px]"
       }`}
     >
       <div
