@@ -11,8 +11,13 @@ function About() {
 
   return (
     <div className="container ">
-      <div className="flex ">
+      <div className="md:flex ">
         <img src={hero} alt="" />
+        <div className="flex flex-col">
+          <h1 className="lg:text-[70px] text-primary font-poppins font-semibold">
+            Services I <span className="text-white">Offer.</span>
+          </h1>
+        </div>
       </div>
     </div>
   );
