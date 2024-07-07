@@ -11,7 +11,9 @@ function About() {
 
   return (
     <div className="container ">
-      <div className="mt-60"></div>
+      <div className="flex ">
+        <img src={hero} alt="" />
+      </div>
     </div>
   );
 }
