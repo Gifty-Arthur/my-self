@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import hero from "../../assets/Images/hero.png";
 import React, { useContext } from "react";
 import { ThemeContext } from "./ThemeContext";
@@ -35,7 +36,7 @@ function Home() {
       }`}
     >
       <div
-        className={`w-full h-[990px] ${
+        className={`w-full h-[1100px] ${
           theme === "dark" ? "bg-tertiary" : "bg-custom3"
         }`}
       >
@@ -46,14 +47,14 @@ function Home() {
                 src={hero}
                 alt=""
                 className="mt-20 flex md:hidden"
-                variants={fadeIn("up", 0.7)}
+                variants={fadeIn("up", 0.4)}
                 initial="hidden"
                 whileInView={"show"}
                 viewport={{ once: false, amount: 0.7 }}
               />
               <motion.h1
-                className="text-[36px] font-poppins lg:text-[50px] font-bold sm:mt-40"
-                variants={fadeIn("up", 0.7)}
+                className="text-[36px] font-poppins lg:text-[50px] font-bold lg:mt-40"
+                variants={fadeIn("up", 0.5)}
                 initial="hidden"
                 whileInView={"show"}
                 viewport={{ once: false, amount: 0.7 }}
@@ -80,7 +81,7 @@ function Home() {
               </motion.h1>
               <motion.h1
                 className="text-[36px] font-poppins lg:text-[50px] font-extrabold"
-                variants={fadeIn("up", 0.7)}
+                variants={fadeIn("up", 0.3)}
                 initial="hidden"
                 whileInView={"show"}
                 viewport={{ once: false, amount: 0.7 }}
@@ -97,7 +98,7 @@ function Home() {
 
               <motion.h1
                 className="lg:text-[40px] text-[26px] font-semibold font-poppins"
-                variants={fadeIn("up", 0.7)}
+                variants={fadeIn("up", 0.5)}
                 initial="hidden"
                 whileInView={"show"}
                 viewport={{ once: false, amount: 0.7 }}
@@ -119,7 +120,7 @@ function Home() {
 
               <div>
                 <motion.button
-                  className="relative group w-[188px] h-[52px] bg-primary sm:mt-20 mt-8 before:absolute before:inset-0 before:bg-red-700 before:scale-x-0 before:origin-right before:transition before:duration-300 hover:before:scale-x-100 hover:before:origin-left"
+                  className="relative group w-[188px] h-[52px] bg-primary md:mt-20 mt-8 before:absolute before:inset-0 before:bg-red-700 before:scale-x-0 before:origin-right before:transition before:duration-300 hover:before:scale-x-100 hover:before:origin-left"
                   variants={fadeIn("up", 0.7)}
                   initial="hidden"
                   whileInView={"show"}
@@ -130,7 +131,13 @@ function Home() {
                   </span>
                 </motion.button>
 
-                <div className="flex-wrap gap-6 mt-6 flex sm:hidden">
+                <motion.div
+                  className="flex-wrap gap-6 mt-6 flex sm:hidden"
+                  variants={fadeIn("up", 0.7)}
+                  initial="hidden"
+                  whileInView={"show"}
+                  viewport={{ once: false, amount: 0.7 }}
+                >
                   <a
                     href="https://www.instagram.com/tiitt_y?igsh=MTMzZG43ZmFianBxYw%3D%3D&utm_source=qr"
                     target="_blank"
@@ -152,7 +159,7 @@ function Home() {
                   >
                     <FaGithub className="text-white w-[28px] h-[28px] sm:w-[32px] sm:h-[32px]" />
                   </a>
-                </div>
+                </motion.div>
               </div>
             </div>
             <div>
@@ -160,13 +167,12 @@ function Home() {
                 src={hero}
                 alt=""
                 className="w-[514px] h-[515px] mt-16 ml-18 md:flex hidden"
-                variants={fadeIn("up", 0.7)}
+                variants={fadeIn("down", 0.5)}
                 initial="hidden"
                 whileInView={"show"}
-                viewport={{ once: false, amount: 0.7 }}
               />
 
-              <div className="flex-wrap gap-6 mt-16 justify-center sm:flex hidden">
+              <div className="flex-wrap gap-6 lg:mt-16 lg:justify-center sm:flex hidden">
                 <a
                   href="https://www.instagram.com/tiitt_y?igsh=MTMzZG43ZmFianBxYw%3D%3D&utm_source=qr"
                   target="_blank"

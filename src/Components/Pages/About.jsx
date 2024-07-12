@@ -42,28 +42,28 @@ function About() {
       }`}
     >
       <div
-        className={`w-full h-[990px] ${
+        className={`w-full  h-[1100px]  ${
           theme === "dark" ? "bg-tertiary" : "bg-custom3"
         }`}
       >
-        <div className="container">
+        <div className="mx-auto container">
           <div ref={ref} className="md:flex flex-row   md:gap-32">
             <motion.img
               src={hero}
               alt=""
-              className="md:mt-44  "
-              variants={fadeIn("up", 0.7)}
+              className="md:mt-24 md:pt-0  pt-14"
+              variants={fadeIn("right", 0.9)}
               initial="hidden"
               whileInView={"show"}
-              viewport={{ once: false, amount: 0.7 }}
+              viewport={{ once: false, amount: 0.3 }}
             />
-            <div className="flex flex-col md:mt-52">
+            <div className="flex flex-col  md:mt-48">
               <motion.h1
                 className="lg:text-[50px] text-primary text-3xl  mt-10 md:mt-20 font-poppins font-semibold"
-                variants={fadeIn("up", 0.7)}
+                variants={fadeIn("left", 0.5)}
                 initial="hidden"
                 whileInView={"show"}
-                viewport={{ once: false, amount: 0.7 }}
+                viewport={{ once: false, amount: 0.3 }}
               >
                 <TypeAnimation
                   sequence={["Services", 1000, ""]}
@@ -76,11 +76,11 @@ function About() {
                 <span className="text-white">I Offer</span>
               </motion.h1>
               <motion.p
-                className="md:text-[21px] text-md font-poppins font-light mt-6"
-                variants={fadeIn("up", 0.5)}
+                className="md:text-[21px] text-md font-poppins font-light mt-6 mb-4"
+                variants={fadeIn("left", 0.3)}
                 initial="hidden"
                 whileInView={"show"}
-                viewport={{ once: false, amount: 0.7 }}
+                viewport={{ once: false, amount: 0.3 }}
               >
                 As a Frontend Web Developer, I'm on a mission to exceed my
                 clients'expectations and deliver exceptional results. My passion
