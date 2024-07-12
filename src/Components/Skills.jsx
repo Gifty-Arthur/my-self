@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { useContext } from "react";
 import { ThemeContext } from "./Pages/ThemeContext";
 import { TypeAnimation } from "react-type-animation";
@@ -24,22 +25,36 @@ const fadeIn = (direction = "up", duration = 0.7) => {
   };
 };
 
-const progressBarVariants = {
+const htmlCssVariants = {
   hidden: { width: 0 },
-  visible: (custom) => ({
-    width: custom,
-    transition: { duration: 1, ease: "easeInOut" },
-  }),
+  visible: { width: "90%", transition: { duration: 2 } },
+};
+
+const jsVariants = {
+  hidden: { width: 0 },
+  visible: { width: "80%", transition: { duration: 2 } },
+};
+
+const reactVariants = {
+  hidden: { width: 0 },
+  visible: { width: "85%", transition: { duration: 2 } },
+};
+
+const tailwindVariants = {
+  hidden: { width: 0 },
+  visible: { width: "75%", transition: { duration: 2 } },
 };
 
 function Skills() {
   const { theme } = useContext(ThemeContext);
   const controls = useAnimation();
-  const { ref, inView } = useInView({ triggerOnce: true });
+  const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.5 });
 
-  if (inView) {
-    controls.start("visible");
-  }
+  useEffect(() => {
+    if (inView) {
+      controls.start("visible");
+    }
+  }, [controls, inView]);
 
   return (
     <div>
@@ -56,7 +71,7 @@ function Skills() {
           <div className="container">
             <div className="flex flex-col">
               <motion.h1
-                className="lg:text-[50px] text-white text-3xl md:mt-24 mt-10 font-poppins font-semibold"
+                className="lg:text-[50px] text-white text-3xl md:mt-14 mt-10 font-poppins font-semibold"
                 variants={fadeIn("left", 0.5)}
                 initial="hidden"
                 whileInView={"show"}
@@ -79,17 +94,55 @@ function Skills() {
               </h2>
 
               {/* skills bar */}
-              <div className="mt-12">
-                <p className="mt-2 text-md font-poppins">HTML/CSS</p>
-                <div className="md:w-[753px] bg-white-500 w-full rounded-full h-2.5 dark:bg-white mt-4">
+              <div className="mt-10">
+                <p className=" text-md font-poppins">HTML/CSS</p>
+                <div className="md:w-[753px] bg-white-500 w-full rounded-full h-3 dark:bg-white mt-2">
                   <motion.div
-                    className="bg-[#73A4CF] h-2.5 rounded-full w-[323px] md:[687px]"
-                    custom="687px" // Define the width you want to animate to
+                    className="bg-[#73A4CF] h-3 rounded-full w-[323px] md:w-[687px]"
                     initial="hidden"
                     animate={controls}
-                    variants={progressBarVariants}
+                    variants={htmlCssVariants}
                     ref={ref}
                   ></motion.div>
+                </div>
+                {/* 2nd bar */}
+                <div className="mt-6">
+                  <p className=" text-md font-poppins">JavaScript</p>
+                  <div className="md:w-[753px] bg-white-500 w-full rounded-full h-3 dark:bg-white ">
+                    <motion.div
+                      className="bg-[#73A4CF] h-3 rounded-full w-[323px] md:w-[687px]"
+                      initial="hidden"
+                      animate={controls}
+                      variants={jsVariants}
+                      ref={ref}
+                    ></motion.div>
+                  </div>
+                </div>
+                {/* 3rd bar */}
+                <div className="mt-6">
+                  <p className="mt-2 text-md font-poppins">React</p>
+                  <div className="md:w-[753px] bg-white-500 w-full rounded-full h-3 dark:bg-white ">
+                    <motion.div
+                      className="bg-[#73A4CF] h-3 rounded-full w-[323px] md:w-[687px]"
+                      initial="hidden"
+                      animate={controls}
+                      variants={reactVariants}
+                      ref={ref}
+                    ></motion.div>
+                  </div>
+                </div>
+                {/* 4th */}
+                <div className="mt-6">
+                  <p className="mt-2 text-md font-poppins">TailwindCSS</p>
+                  <div className="md:w-[753px] bg-white-500 w-full rounded-full h-3 dark:bg-white ">
+                    <motion.div
+                      className="bg-[#73A4CF] h-3 rounded-full w-[323px] md:w-[687px]"
+                      initial="hidden"
+                      animate={controls}
+                      variants={tailwindVariants}
+                      ref={ref}
+                    ></motion.div>
+                  </div>
                 </div>
               </div>
             </div>

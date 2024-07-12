@@ -43,7 +43,7 @@ function About() {
       }`}
     >
       <div
-        className={`w-full  h-[999px]  ${
+        className={`w-full  h-[799px]  ${
           theme === "dark" ? "bg-tertiary" : "bg-custom3"
         }`}
       >
@@ -52,13 +52,13 @@ function About() {
             <motion.img
               src={hero}
               alt=""
-              className="md:mt-44 md:pt-0  pt-20"
+              className="md:mt-24 md:pt-0  pt-20"
               variants={fadeIn("right", 0.9)}
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.3 }}
             />
-            <div className="flex flex-col  md:mt-48">
+            <div className="flex flex-col  md:mt-28">
               <motion.h1
                 className="lg:text-[50px] text-primary text-3xl  mt-20 md:mt-28 font-poppins font-semibold"
                 variants={fadeIn("left", 0.5)}
