@@ -5,6 +5,7 @@ import "./App.css";
 import Navbar from "./Components/Pages/Navbar";
 import { ThemeProvider } from "./Components/Pages/ThemeContext";
 import Home from "./Components/Pages/Home";
+import About from "./Components/Pages/About";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <div>
         <Navbar />
         <Home />
+        <About />
       </div>
     </ThemeProvider>
   );

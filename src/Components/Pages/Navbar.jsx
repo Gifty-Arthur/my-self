@@ -53,7 +53,7 @@ function Navbar() {
               {/* links */}
               <div className="">
                 <ul
-                  className={`flex-row items-center text-lg font-medium gap-8 md:flex hidden cursor-pointer ${
+                  className={`flex-row items-center text-lg  gap-8 md:flex hidden cursor-pointer ${
                     theme === "dark" ? "text-white" : "text-black"
                   }`}
                 >
@@ -197,8 +197,11 @@ function Navbar() {
           <div className="w-full mr-6 bg-primary h-[60px] rounded-full max-auto px-5 flex justify-between text-white text-3xl">
             <Link
               to="home"
+              activeClass="active"
               smooth={true}
               duration={500}
+              spy={true}
+              offset={-200}
               className="cursor-pointer w-[60px] h-[60px] flex items-center justify-center hover:text-black"
             >
               <BiUser />
