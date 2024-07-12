@@ -30,6 +30,7 @@ const fadeIn = (direction = "up", duration = 0.7) => {
 function About() {
   const { theme } = useContext(ThemeContext);
   // Define the text sequence for the animation
+  // eslint-disable-next-line no-unused-vars
   const { ref, inView } = useInView({
     triggerOnce: false, // Animate only once when the element comes into view
     threshold: 0.5, // Trigger the animation when 10% of the element is in view
@@ -42,7 +43,7 @@ function About() {
       }`}
     >
       <div
-        className={`w-full  h-[1100px]  ${
+        className={`w-full  h-[999px]  ${
           theme === "dark" ? "bg-tertiary" : "bg-custom3"
         }`}
       >
@@ -51,7 +52,7 @@ function About() {
             <motion.img
               src={hero}
               alt=""
-              className="md:mt-24 md:pt-0  pt-14"
+              className="md:mt-44 md:pt-0  pt-20"
               variants={fadeIn("right", 0.9)}
               initial="hidden"
               whileInView={"show"}
@@ -59,7 +60,7 @@ function About() {
             />
             <div className="flex flex-col  md:mt-48">
               <motion.h1
-                className="lg:text-[50px] text-primary text-3xl  mt-10 md:mt-20 font-poppins font-semibold"
+                className="lg:text-[50px] text-primary text-3xl  mt-20 md:mt-28 font-poppins font-semibold"
                 variants={fadeIn("left", 0.5)}
                 initial="hidden"
                 whileInView={"show"}
