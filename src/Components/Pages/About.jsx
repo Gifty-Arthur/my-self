@@ -43,7 +43,7 @@ function About() {
       }`}
     >
       <div
-        className={`w-full  h-[799px]  ${
+        className={`w-full  md:h-[799px] h-full ${
           theme === "dark" ? "bg-tertiary" : "bg-custom3"
         }`}
       >

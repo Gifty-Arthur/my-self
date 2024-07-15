@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import { useEffect } from "react";
 import { useContext } from "react";
 import { ThemeContext } from "./Pages/ThemeContext";
@@ -66,7 +67,7 @@ function Skills() {
         }`}
       >
         <div
-          className={`w-full h-[1100px] ${
+          className={`w-full h-[799px]  ${
             theme === "dark" ? "bg-tertiary" : "bg-custom3"
           }`}
         >
@@ -83,7 +84,7 @@ function Skills() {
                   My &nbsp;
                   <span>
                     <TypeAnimation
-                      sequence={["Skills", 1000, ""]}
+                      sequence={["Skills", 1000]}
                       speed={50}
                       className="text-primary"
                       wrapper="span"
@@ -169,7 +170,7 @@ function Skills() {
               <motion.img
                 src={skill}
                 alt=""
-                className="w-full md:w-[438px] md:h-[438px]"
+                className="w-full md:w-[438px] md:h-[438px] md:mt-0 mt-12"
                 variants={fadeIn("up", 0.9)}
                 initial="hidden"
                 whileInView={"show"}

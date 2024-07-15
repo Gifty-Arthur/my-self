@@ -7,6 +7,7 @@ import { ThemeProvider } from "./Components/Pages/ThemeContext";
 import Home from "./Components/Pages/Home";
 import About from "./Components/Pages/About";
 import Skills from "./Components/Skills";
+import Experience from "./Components/Pages/Experience";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Home />
         <About />
         <Skills />
+        <Experience />
       </div>
     </ThemeProvider>
   );

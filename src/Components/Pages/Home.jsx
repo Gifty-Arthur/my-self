@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable react/no-unescaped-entities */
 import hero from "../../assets/Images/hero.png";
 import React, { useContext } from "react";
@@ -36,7 +37,7 @@ function Home() {
       }`}
     >
       <div
-        className={`w-full h-[1100px] ${
+        className={`w-full md:h-[877px] h-full${
           theme === "dark" ? "bg-tertiary" : "bg-custom3"
         }`}
       >
