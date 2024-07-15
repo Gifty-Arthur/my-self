@@ -8,6 +8,7 @@ import Home from "./Components/Pages/Home";
 import About from "./Components/Pages/About";
 import Skills from "./Components/Skills";
 import Experience from "./Components/Pages/Experience";
+import Projects from "./Components/Pages/Projects";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <About />
         <Skills />
         <Experience />
+        <Projects />
       </div>
     </ThemeProvider>
   );

@@ -54,7 +54,7 @@ function Experience() {
               >
                 <div className="">
                   <motion.h1
-                    className="lg:text-[50px] text-primary text-3xl mt-20 font-poppins font-semibold "
+                    className="lg:text-[50px] text-white text-3xl mt-20 font-poppins font-semibold "
                     variants={fadeIn("up", 0.5)}
                     initial="hidden"
                     whileInView={"show"}
@@ -118,7 +118,12 @@ function Experience() {
                         </div>
                       </div>
                       <div className="relative">
-                        <div className="dot md:-mt-0 -mt-4 md:-left-2.5"></div>
+                        <div
+                          className="dot md:-mt-0 -mt-4 md:-left-2.5"
+                          title="current event"
+                        >
+                          <div className="dot absolute -top-1.5 -left-1 animate-ping"></div>
+                        </div>
                         <div className="pl-8 md:text-3xl text-md">
                           <h3 className="font-bold font-poppins md:mt-12 mt-8">
                             Full Stack Web Development
