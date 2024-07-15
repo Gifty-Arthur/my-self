@@ -13,11 +13,11 @@
     }
     .dot{
         @apply
-        absolute top-5 -left-3.5
+        absolute top-14 -left-2 
         bg-primary
-        h-6 w-6
+        h-4 w-4
         rounded-full
-        border-4 border-white
+        
 
     }
     .timeline-date{

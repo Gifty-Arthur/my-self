@@ -170,7 +170,7 @@ function Skills() {
               <motion.img
                 src={skill}
                 alt=""
-                className="w-full md:w-[438px] md:h-[438px] md:mt-0 mt-12"
+                className=" sm:w-[338px]  md:w-[438px] md:h-[438px] md:mt-0 mt-12 "
                 variants={fadeIn("up", 0.9)}
                 initial="hidden"
                 whileInView={"show"}

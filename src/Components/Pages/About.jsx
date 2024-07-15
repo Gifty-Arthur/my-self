@@ -53,7 +53,7 @@ function About() {
               src={hero}
               alt=""
               className="md:mt-24 md:pt-0  pt-20"
-              variants={fadeIn("right", 0.9)}
+              variants={fadeIn("up", 0.9)}
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.3 }}
@@ -61,7 +61,7 @@ function About() {
             <div className="flex flex-col  md:mt-28">
               <motion.h1
                 className="lg:text-[50px] text-primary text-3xl  mt-20 md:mt-28 font-poppins font-semibold"
-                variants={fadeIn("left", 0.5)}
+                variants={fadeIn("up", 0.5)}
                 initial="hidden"
                 whileInView={"show"}
                 viewport={{ once: false, amount: 0.3 }}
@@ -78,7 +78,7 @@ function About() {
               </motion.h1>
               <motion.p
                 className="md:text-[21px] text-md font-poppins font-light mt-6 mb-4"
-                variants={fadeIn("left", 0.3)}
+                variants={fadeIn("up", 0.3)}
                 initial="hidden"
                 whileInView={"show"}
                 viewport={{ once: false, amount: 0.3 }}

@@ -25,6 +25,12 @@ function Experience() {
     };
   };
   const { theme } = useContext(ThemeContext);
+  // eslint-disable-next-line no-unused-vars
+  const { ref, inView } = useInView({
+    triggerOnce: false, // Animate only once when the element comes into view
+    threshold: 0.5, // Trigger the animation when 10% of the element is in view
+  });
+
   return (
     <div>
       <div
@@ -33,71 +39,168 @@ function Experience() {
         }`}
       >
         <div
-          className={`w-full  h-[1100px]  ${
+          className={`w-full h-full ${
             theme === "dark" ? "bg-tertiary" : "bg-custom3"
           }`}
         >
-          <div className="mx-auto container">
-            <div className="flex flex-col">
-              <div>
-                <motion.h1
-                  className="lg:text-[50px] text-primary text-3xl md:mt-10  sm:mt-52 font-poppins font-semibold "
-                  variants={fadeIn("up", 0.5)}
-                  initial="hidden"
-                  whileInView={"show"}
-                  viewport={{ once: false, amount: 0.3 }}
-                >
-                  My &nbsp;
-                  <span>
-                    <TypeAnimation
-                      sequence={["Experience", 1000]}
-                      speed={50}
-                      className="text-white"
-                      wrapper="span"
-                      repeat={Infinity}
-                      cursor={false}
-                    />{" "}
-                  </span>
-                </motion.h1>
-                {/* year */}
-                <div className="flex flex-row">
-                  <div className="flex flex-col gap-36 md:mt-28 mt-20">
-                    <p className="timeline-date md:text-2xl  font-poppins md:mt-8 mt-16 ">
-                      2019-2023
-                    </p>
-                    <div className="text-center">
-                      <p className="timeline-date md:mt-10 font-poppins ">
-                        Nov-Dec <br />
-                        2023
+          <motion.div className="mx-auto container">
+            <div className="md:flex items-start justify-between ">
+              <motion.div
+                className="flex flex-col "
+                variants={fadeIn("up", 0.5)}
+                initial="hidden"
+                whileInView={"show"}
+                viewport={{ once: false, amount: 0.3 }}
+              >
+                <div className="">
+                  <motion.h1
+                    className="lg:text-[50px] text-primary text-3xl mt-20 font-poppins font-semibold "
+                    variants={fadeIn("up", 0.5)}
+                    initial="hidden"
+                    whileInView={"show"}
+                    viewport={{ once: false, amount: 0.3 }}
+                  >
+                    My &nbsp;
+                    <span>
+                      <TypeAnimation
+                        sequence={["Education", 1000]}
+                        speed={50}
+                        className="text-white"
+                        wrapper="span"
+                        repeat={Infinity}
+                        cursor={false}
+                      />{" "}
+                    </span>
+                  </motion.h1>
+                  {/* year */}
+                  <div className="flex flex-row">
+                    <div className="flex flex-col gap-36 mt-20">
+                      <p className="timeline-date md:text-2xl text-sm font-poppins md:mt-20 mt-16 ">
+                        2019-2023
                       </p>
+                      <div className="text-center">
+                        <p className="timeline-date md:text-2xl text-sm font-poppins md:mt-16 mt-4">
+                          Nov-Dec <br />
+                          2023
+                        </p>
+                      </div>
+                      <div className="text-center">
+                        <p className="timeline-date md:text-2xl text-sm font-poppins md:mt-8 mt-8 ">
+                          July-Till
+                          <br />
+                          2024
+                        </p>
+                      </div>
                     </div>
-                    <div className="text-center">
-                      <p className="timeline-date mt-10 font-poppins ">
-                        July-Till
-                        <br />
-                        2024
-                      </p>
-                    </div>
-                  </div>
-
-                  <div className="timeline mt-20">
-                    <div className="relative">
-                      <div className="dot"></div>
-                      <div className="pl-8  md:text-3xl text-md ">
-                        <span className=" font-bold text-primary">Bsc</span>
-                        <h3 className=" font-bold font-poppins">
-                          Computer Science
-                        </h3>
-                        <h3 className=" font-bold text-secondary">
-                          University of Ghana
-                        </h3>
+                    <div className="timeline mt-20 flex flex-col gap-16">
+                      <div className="relative">
+                        <div className="dot md:-mt-4 -mt-8 md:-left-2.5"></div>
+                        <div className="pl-8 md:text-3xl text-md ">
+                          <span className="text-primary md:mt-0">Bsc</span>
+                          <h3 className="font-bold font-poppins">
+                            Computer Science
+                          </h3>
+                          <h3 className="font-bold text-secondary">
+                            University of Ghana
+                          </h3>
+                        </div>
+                      </div>
+                      <div className="relative">
+                        <div className="dot md:-mt-0 -mt-6 md:-left-2.5"></div>
+                        <div className="pl-8 md:text-3xl text-md md:mt-0">
+                          <span className="text-primary">Certifications</span>
+                          <h3 className="font-bold font-poppins mt-2">
+                            Soft Skills Certification
+                          </h3>
+                          <h3 className="font-bold text-secondary mt-2">
+                            JobberMan Ghana
+                          </h3>
+                        </div>
+                      </div>
+                      <div className="relative">
+                        <div className="dot md:-mt-0 -mt-4 md:-left-2.5"></div>
+                        <div className="pl-8 md:text-3xl text-md">
+                          <h3 className="font-bold font-poppins md:mt-12 mt-8">
+                            Full Stack Web Development
+                          </h3>
+                          <h3 className="font-bold text-secondary">Udemy</h3>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
+              </motion.div>
+
+              <motion.div
+                className="flex flex-col mt-20 md:mt-20"
+                variants={fadeIn("up", 0.9)}
+                initial="hidden"
+                whileInView={"show"}
+                viewport={{ once: false, amount: 0.3 }}
+              >
+                <div className="">
+                  <motion.h1
+                    className="lg:text-[50px] text-primary text-3xl font-poppins font-semibold "
+                    variants={fadeIn("up", 0.5)}
+                    initial="hidden"
+                    whileInView={"show"}
+                    viewport={{ once: false, amount: 0.3 }}
+                  >
+                    My &nbsp;
+                    <span>
+                      <TypeAnimation
+                        sequence={["Experience", 1000]}
+                        speed={50}
+                        className="text-white"
+                        wrapper="span"
+                        repeat={Infinity}
+                        cursor={false}
+                      />{" "}
+                    </span>
+                  </motion.h1>
+                  {/* year */}
+                  <div className="flex flex-row">
+                    <div className="flex flex-col gap-28 mt-20">
+                      <p className="timeline-date md:text-2xl text-sm font-poppins md:mt-12 mt-14">
+                        2019-2023
+                      </p>
+                      <div className="text-center">
+                        <p className="timeline-date md:text-2xl text-sm font-poppins md:mt-24 ">
+                          July-Till
+                          <br />
+                          2024
+                        </p>
+                      </div>
+                    </div>
+                    <div className="timeline mt-20 flex flex-col gap-16">
+                      <div className="relative">
+                        <div className="dot md:-mt-4 -mt-8 md:-left-2.5"></div>
+                        <div className="pl-8 md:text-3xl text-md ">
+                          <span className="text-primary md:mt-0">OddHaus</span>
+                          <h3 className="font-bold text-secondary">
+                            Internship
+                          </h3>
+                        </div>
+                      </div>
+                      <div className="relative">
+                        <div
+                          className="dot md:-mt-0 -mt-4 md:-left-2.5"
+                          title="current event"
+                        >
+                          <div className="dot absolute -top-1.5 -left-1 animate-ping"></div>
+                        </div>
+                        <div className="pl-8 md:text-3xl text-md">
+                          <h3 className="font-bold font-poppins md:mt-12 mt-8 text-[#D534A5]">
+                            Freelancer
+                          </h3>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </motion.div>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </div>

@@ -167,7 +167,7 @@ function Home() {
               <motion.img
                 src={hero}
                 alt=""
-                className="w-[514px] h-[515px] mt-16 ml-18 md:flex hidden"
+                className="md:w-[514px] md:h-[515px] w-full mt-16 ml-18 md:flex hidden"
                 variants={fadeIn("down", 0.5)}
                 initial="hidden"
                 whileInView={"show"}
