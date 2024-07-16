@@ -43,7 +43,7 @@ function Navbar() {
                   transition={{ duration: 2, repeat: Infinity, ease: "linear" }}
                 />
                 <h1
-                  className={`sm:text-2xl font-poppins font-extrabold text-xl cursor-pointer text-[#E68369] sm:mt-2 mt-1 ${
+                  className={`sm:text-2xl font-poppins font-extrabold text-lg cursor-pointer text-[#E68369] sm:mt-2 mt-1 ${
                     theme === "dark" ? "text-white" : "text-black"
                   }`}
                 >

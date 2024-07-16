@@ -75,7 +75,7 @@ function Projects() {
                     Some completed projects that can be here
                   </p>
                 </div>
-                <div className="flex flex-row">
+                <div className="flex flex-row md:mt-0 mt-8">
                   <div className="flex flex-wrap mt-4" ref={ref}>
                     {inView && (
                       <motion.div className="text-6xl text-primary font-poppins">
@@ -109,7 +109,7 @@ function Projects() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <div className="border rounded-lg w-[] 700pxh-[489px] bg-primary-800 md:mt-20">
+                <div className="border rounded-lg w-[] 700pxh-[489px] bg-primary-800 md:mt-20 mt-10">
                   <img src={bg} alt="" className=" mt-10 rounded-md" />
                 </div>
               </a>

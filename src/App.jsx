@@ -9,6 +9,8 @@ import About from "./Components/Pages/About";
 import Skills from "./Components/Skills";
 import Experience from "./Components/Pages/Experience";
 import Projects from "./Components/Pages/Projects";
+import Footer from "./Components/Pages/Footer";
+import Foot from "./Components/Pages/Foot";
 
 function App() {
   return (
@@ -20,6 +22,8 @@ function App() {
         <Skills />
         <Experience />
         <Projects />
+        <Footer />
+        <Foot />
       </div>
     </ThemeProvider>
   );
