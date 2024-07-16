@@ -60,15 +60,23 @@ function Experience() {
                     whileInView={"show"}
                     viewport={{ once: false, amount: 0.3 }}
                   >
-                    My &nbsp;
+                    <span
+                      className={`${
+                        theme === "dark" ? "text-white" : "text-black"
+                      }`}
+                    >
+                      My
+                    </span>{" "}
                     <span>
                       <TypeAnimation
                         sequence={["Education", 1000]}
                         speed={50}
-                        className="text-white"
                         wrapper="span"
                         repeat={Infinity}
                         cursor={false}
+                        className={`${
+                          theme === "dark" ? "text-white" : "text-black"
+                        }`}
                       />{" "}
                     </span>
                   </motion.h1>
@@ -145,28 +153,40 @@ function Experience() {
               >
                 <div className="">
                   <motion.h1
-                    className="lg:text-[50px] text-primary text-3xl font-poppins font-semibold "
+                    className="lg:text-[50px] text-white text-3xl font-poppins font-semibold "
                     variants={fadeIn("up", 0.5)}
                     initial="hidden"
                     whileInView={"show"}
                     viewport={{ once: false, amount: 0.3 }}
                   >
-                    My &nbsp;
+                    <span
+                      className={`${
+                        theme === "dark" ? "text-white" : "text-black"
+                      }`}
+                    >
+                      My
+                    </span>{" "}
                     <span>
                       <TypeAnimation
-                        sequence={["Experience", 1000]}
+                        sequence={["EXperience", 1000]}
                         speed={50}
-                        className="text-white"
                         wrapper="span"
                         repeat={Infinity}
                         cursor={false}
+                        className={`${
+                          theme === "dark" ? "text-white" : "text-black"
+                        }`}
                       />{" "}
                     </span>
                   </motion.h1>
                   {/* year */}
                   <div className="flex flex-row">
                     <div className="flex flex-col gap-28 mt-20">
-                      <p className="timeline-date md:text-2xl text-sm font-poppins md:mt-12 mt-14">
+                      <p
+                        className={`timeline-date md:text-2xl text-sm font-poppins md:mt-12 mt-14 ${
+                          theme === "dark" ? "border-black" : "border-gray-200"
+                        }`}
+                      >
                         2019-2023
                       </p>
                       <div className="text-center">
@@ -177,7 +197,11 @@ function Experience() {
                         </p>
                       </div>
                     </div>
-                    <div className="timeline mt-20 flex flex-col gap-16">
+                    <div
+                      className={`timeline mt-20 flex flex-col gap-16${
+                        theme === "dark" ? "border-black" : "border-gray-200"
+                      }`}
+                    >
                       <div className="relative">
                         <div className="dot md:-mt-4 -mt-8 md:-left-2.5 md:h-4 md:w-4"></div>
                         <div className="pl-8 md:text-3xl text-md ">

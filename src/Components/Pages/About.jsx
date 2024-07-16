@@ -74,10 +74,18 @@ function About() {
                   repeat={Infinity}
                   cursor={false}
                 />{" "}
-                <span className="text-white">I Offer</span>
+                <span
+                  className={`${
+                    theme === "dark" ? "text-white" : "text-black"
+                  }`}
+                >
+                  I Offer
+                </span>
               </motion.h1>
               <motion.p
-                className="md:text-[21px] text-md font-poppins font-light mt-6 mb-4"
+                className={`md:text-[21px] text-md font-poppins font-light mt-6 mb-4${
+                  theme === "dark" ? "text-[#B0B0B4]" : "text-black"
+                }`}
                 variants={fadeIn("up", 0.3)}
                 initial="hidden"
                 whileInView={"show"}

@@ -75,13 +75,22 @@ function Skills() {
             <div className="md:flex items-center justify-between">
               <div className="flex flex-col">
                 <motion.h1
-                  className="lg:text-[50px] text-white text-3xl md:mt-14 mt-10 font-poppins font-semibold"
+                  className={`lg:text-[50px] text-3xl md:mt-14 mt-10 font-poppins font-semibold ${
+                    theme === "dark" ? "text-white" : "text-black"
+                  }`}
                   variants={fadeIn("up", 0.5)}
                   initial="hidden"
                   whileInView={"show"}
                   viewport={{ once: false, amount: 0.3 }}
                 >
-                  My &nbsp;
+                  <span
+                    className={`${
+                      theme === "dark" ? "text-white" : "text-black"
+                    }`}
+                  >
+                    My
+                  </span>{" "}
+                  &nbsp;
                   <span>
                     <TypeAnimation
                       sequence={["Skills", 1000]}

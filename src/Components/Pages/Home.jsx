@@ -107,7 +107,9 @@ function Home() {
                 Frontend Web Developer
               </motion.h1>
               <motion.p
-                className="font-poppins text-md md:text-[21px] text-[#B0B0B4]"
+                className={`font-poppins text-md md:text-[21px] ${
+                  theme === "dark" ? "text-[#B0B0B4]" : "text-black"
+                }`}
                 variants={fadeIn("up", 0.7)}
                 initial="hidden"
                 whileInView={"show"}
@@ -144,21 +146,33 @@ function Home() {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <FaInstagram className="text-white w-[28px] h-[28px] sm:w-[32px] sm:h-[32px]" />
+                    <FaInstagram
+                      className={`${
+                        theme === "dark" ? "text-white" : "text-black"
+                      } w-[28px] h-[28px] sm:w-[32px] sm:h-[32px]`}
+                    />
                   </a>
                   <a
                     href="https://www.linkedin.com/in/gifty-arthur-95316a1b5/"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <FaLinkedin className="text-white w-[28px] h-[28px] sm:w-[32px] sm:h-[32px]" />
+                    <FaLinkedin
+                      className={`${
+                        theme === "dark" ? "text-white" : "text-black"
+                      } w-[28px] h-[28px] sm:w-[32px] sm:h-[32px]`}
+                    />
                   </a>
                   <a
                     href="https://github.com/Gifty-Arthur"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <FaGithub className="text-white w-[28px] h-[28px] sm:w-[32px] sm:h-[32px]" />
+                    <FaGithub
+                      className={`${
+                        theme === "dark" ? "text-white" : "text-black"
+                      } w-[28px] h-[28px] sm:w-[32px] sm:h-[32px]`}
+                    />
                   </a>
                 </motion.div>
               </div>
@@ -179,21 +193,33 @@ function Home() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <FaInstagram className="text-white w-[28px] h-[28px] sm:w-[32px] sm:h-[32px]" />
+                  <FaInstagram
+                    className={`${
+                      theme === "dark" ? "text-white" : "text-black"
+                    } w-[28px] h-[28px] sm:w-[32px] sm:h-[32px]`}
+                  />
                 </a>
                 <a
                   href="https://www.linkedin.com/in/gifty-arthur-95316a1b5/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <FaLinkedin className="text-white w-[28px] h-[28px] sm:w-[32px] sm:h-[32px]" />
+                  <FaLinkedin
+                    className={`${
+                      theme === "dark" ? "text-white" : "text-black"
+                    } w-[28px] h-[28px] sm:w-[32px] sm:h-[32px]`}
+                  />
                 </a>
                 <a
                   href="https://github.com/Gifty-Arthur"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <FaGithub className="text-white w-[28px] h-[28px] sm:w-[32px] sm:h-[32px]" />
+                  <FaGithub
+                    className={`${
+                      theme === "dark" ? "text-white" : "text-black"
+                    } w-[28px] h-[28px] sm:w-[32px] sm:h-[32px]`}
+                  />
                 </a>
               </div>
             </div>
