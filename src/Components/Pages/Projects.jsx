@@ -6,6 +6,9 @@ import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
+//images
+import bg from "../../assets/Images/bg.png";
+
 function Projects() {
   const fadeIn = (direction = "up", duration = 0.7) => {
     return {
@@ -46,46 +49,70 @@ function Projects() {
           }`}
         >
           <div className="mx-auto container">
-            <div className="md:flex items-center justify-between ">
-              <div className="flex flex-col ">
-                <motion.h1
-                  className="lg:text-[50px] text-white text-2xl mt-20 font-poppins font-semibold "
-                  variants={fadeIn("up", 0.5)}
-                  initial="hidden"
-                  whileInView={"show"}
-                  viewport={{ once: false, amount: 0.3 }}
-                >
-                  Some of My Creative &nbsp;
-                  <span>
-                    <TypeAnimation
-                      sequence={["Works", 2000]}
-                      speed={50}
-                      className="text-primary"
-                      wrapper="span"
-                      repeat={Infinity}
-                      cursor={false}
-                    />{" "}
-                  </span>
-                </motion.h1>
-                <p className="text-md mt-8 font-poppins">
-                  Some completed projects that can be here
-                </p>
-              </div>
-              <div className="flex flex-row">
-                <div className="flex flex-wrap mt-4" ref={ref}>
-                  {inView && (
-                    <motion.div className="text-6xl text-primary font-poppins">
-                      <CountUp end={3} duration={9} />
-                    </motion.div>
-                  )}
-                  <span className="text-base md:text-xl ml-4">
-                    Years of <br />
-                    Experience
-                  </span>
+            <div className="flex flex-col ">
+              <div className="md:flex items-center justify-between md:mt-28 ">
+                <div className="flex flex-col ">
+                  <motion.h1
+                    className="lg:text-[50px] text-white text-2xl mt-20 font-poppins font-semibold "
+                    variants={fadeIn("up", 0.5)}
+                    initial="hidden"
+                    whileInView={"show"}
+                    viewport={{ once: false, amount: 0.3 }}
+                  >
+                    Some of My Creative &nbsp;
+                    <span>
+                      <TypeAnimation
+                        sequence={["Works", 2000]}
+                        speed={50}
+                        className="text-primary"
+                        wrapper="span"
+                        repeat={Infinity}
+                        cursor={false}
+                      />{" "}
+                    </span>
+                  </motion.h1>
+                  <p className="text-md mt-4 font-poppins">
+                    Some completed projects that can be here
+                  </p>
                 </div>
-                {/* line */}
-                <div className="border-l-4 border-gray-200 py-14 ml-8 space-y-14"></div>
+                <div className="flex flex-row">
+                  <div className="flex flex-wrap mt-4" ref={ref}>
+                    {inView && (
+                      <motion.div className="text-6xl text-primary font-poppins">
+                        <CountUp end={3} duration={9} />
+                      </motion.div>
+                    )}
+                    <span className="text-base md:text-xl ml-4">
+                      Years of <br />
+                      Experience
+                    </span>
+                  </div>
+                  {/* line */}
+                  <div className="border-l-4 border-gray-200 py-14 ml-8 space-y-14"></div>
+                  <div className="flex flex-wrap mt-4 ml-8" ref={ref}>
+                    {inView && (
+                      <motion.div className="text-6xl text-primary font-poppins">
+                        <CountUp end={10} duration={9} />
+                      </motion.div>
+                    )}
+                    <span className="text-base md:text-xl ml-4">
+                      Years of <br />
+                      Experience
+                    </span>
+                  </div>
+                </div>
               </div>
+              {/* bg */}
+
+              <a
+                href="https://grocery-website-zeta.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div className="border rounded-lg w-[] 700pxh-[489px] bg-primary-800 md:mt-20">
+                  <img src={bg} alt="" className=" mt-10 rounded-md" />
+                </div>
+              </a>
             </div>
           </div>
         </div>

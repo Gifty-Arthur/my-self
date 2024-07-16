@@ -94,7 +94,7 @@ function Experience() {
                     </div>
                     <div className="timeline mt-20 flex flex-col gap-16">
                       <div className="relative">
-                        <div className="dot md:-mt-4 -mt-8 md:-left-2.5"></div>
+                        <div className="dot md:-mt-4 -mt-8 md:-left-2.5 md:h-4 md:w-4"></div>
                         <div className="pl-8 md:text-3xl text-md ">
                           <span className="text-primary md:mt-0">Bsc</span>
                           <h3 className="font-bold font-poppins">
@@ -106,7 +106,7 @@ function Experience() {
                         </div>
                       </div>
                       <div className="relative">
-                        <div className="dot md:-mt-0 -mt-6 md:-left-2.5"></div>
+                        <div className="dot md:-mt-0 -mt-6 md:-left-2.5 md:h-4 md:w-4"></div>
                         <div className="pl-8 md:text-3xl text-md md:mt-0">
                           <span className="text-primary">Certifications</span>
                           <h3 className="font-bold font-poppins mt-2">
@@ -119,7 +119,7 @@ function Experience() {
                       </div>
                       <div className="relative">
                         <div
-                          className="dot md:-mt-0 -mt-4 md:-left-2.5"
+                          className="dot md:-mt-0 -mt-4 md:-left-2.5  md:h-4 md:w-4"
                           title="current event"
                         >
                           <div className="dot absolute -top-1.5 -left-1 animate-ping"></div>
@@ -179,7 +179,7 @@ function Experience() {
                     </div>
                     <div className="timeline mt-20 flex flex-col gap-16">
                       <div className="relative">
-                        <div className="dot md:-mt-4 -mt-8 md:-left-2.5"></div>
+                        <div className="dot md:-mt-4 -mt-8 md:-left-2.5 md:h-4 md:w-4"></div>
                         <div className="pl-8 md:text-3xl text-md ">
                           <span className="text-primary md:mt-0">OddHaus</span>
                           <h3 className="font-bold text-secondary">
@@ -189,10 +189,10 @@ function Experience() {
                       </div>
                       <div className="relative">
                         <div
-                          className="dot md:-mt-0 -mt-4 md:-left-2.5"
+                          className="dot md:-mt-0 -mt-4 md:-left-2.5 md:h-4 md:w-4"
                           title="current event"
                         >
-                          <div className="dot absolute -top-1.5 -left-1 animate-ping"></div>
+                          <div className="dot absolute -top-1.5 -left-1 animate-ping "></div>
                         </div>
                         <div className="pl-8 md:text-3xl text-md">
                           <h3 className="font-bold font-poppins md:mt-12 mt-8 text-[#D534A5]">

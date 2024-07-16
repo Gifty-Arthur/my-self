@@ -13,9 +13,9 @@
     }
     .dot{
         @apply
-        absolute top-14 -left-2 
+        absolute top-14 -left-3
         bg-primary
-        h-4 w-4
+        h-5 w-5
         rounded-full
         
 
