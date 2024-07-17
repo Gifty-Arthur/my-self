@@ -59,7 +59,13 @@ function Projects() {
                     whileInView={"show"}
                     viewport={{ once: false, amount: 0.3 }}
                   >
-                    Some of My Creative &nbsp;
+                    <span
+                      className={`${
+                        theme === "dark" ? "text-white" : "text-black"
+                      }`}
+                    >
+                      Some of My Creative
+                    </span>{" "}
                     <span>
                       <TypeAnimation
                         sequence={["Works", 2000]}

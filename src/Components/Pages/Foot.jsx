@@ -4,6 +4,7 @@ import { ThemeContext } from "./ThemeContext";
 
 function Foot() {
   const { theme } = useContext(ThemeContext);
+
   return (
     <div
       className={`${
@@ -19,8 +20,14 @@ function Foot() {
           <div className="mx-auto container">
             <div className="flex items-center justify-center mt-5">
               <p className="md:text-2xl text-base font-poppins">
-                © 2024 <span className="text-primary">Gifty Arthur</span> All
-                Right Reserved, Inc
+                <span
+                  className={`${
+                    theme === "dark" ? "text-white" : "text-white"
+                  }`}
+                >
+                  © 2024 <span className="text-primary">Gifty Arthur</span> All
+                  Right Reserved, Inc
+                </span>{" "}
               </p>
             </div>
           </div>
