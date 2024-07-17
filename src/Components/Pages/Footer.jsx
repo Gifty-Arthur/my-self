@@ -39,7 +39,8 @@ function Footer() {
   });
 
   return (
-    <div
+    <section
+      id="Footer"
       className={`${
         theme === "dark" ? "bg-tertiary text-white" : "bg-custom3 text-black"
       } flex items-center justify-center`}
@@ -95,7 +96,7 @@ function Footer() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

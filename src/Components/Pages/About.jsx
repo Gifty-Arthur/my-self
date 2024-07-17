@@ -37,7 +37,8 @@ function About() {
   });
 
   return (
-    <div
+    <section
+      id="About"
       className={`${
         theme === "dark" ? "bg-tertiary text-white" : "bg-custom3 text-black"
       }`}
@@ -102,7 +103,7 @@ function About() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

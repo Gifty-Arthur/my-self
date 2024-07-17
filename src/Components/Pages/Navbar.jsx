@@ -1,9 +1,10 @@
 // Navbar.js
 // eslint-disable-next-line no-unused-vars
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import { Link } from "react-scroll";
 import { motion } from "framer-motion";
 import { ThemeContext } from "./ThemeContext";
+import { Link as ScrollLink } from "react-scroll";
 
 // images
 import logo from "../../assets/Images/logo.png";
@@ -12,10 +13,6 @@ import sun from "../../assets/Images/sun.png";
 import cv from "../../assets/Images/cv.pdf";
 
 // icons
-import { BiUser } from "react-icons/bi";
-import { BsClipboardData } from "react-icons/bs";
-import { MdLibraryBooks } from "react-icons/md";
-import { CgBriefcase } from "react-icons/cg";
 
 function Navbar() {
   const { theme, toggleTheme } = useContext(ThemeContext);
@@ -32,9 +29,9 @@ function Navbar() {
         }`}
       >
         <div className="container">
-          <div className="sticky top-0 z-[20] p-6">
-            <nav className="flex justify-between items-center w-[100%]">
-              <div className="flex flex-row gap-2">
+          <div className="  p-6 ">
+            <nav className="flex justify-between items-center w-[100%] ">
+              <div className="flex flex-row gap-2 ">
                 <motion.img
                   src={logo}
                   alt=""
@@ -58,8 +55,8 @@ function Navbar() {
                   }`}
                 >
                   <li>
-                    <Link
-                      to="home"
+                    <ScrollLink
+                      to="Home"
                       smooth={true}
                       duration={500}
                       className={`text-xl hover:text-primary font-poppins font-semibold ${
@@ -67,11 +64,11 @@ function Navbar() {
                       }`}
                     >
                       Home
-                    </Link>
+                    </ScrollLink>
                   </li>
                   <li>
-                    <Link
-                      to="about"
+                    <ScrollLink
+                      to="About"
                       smooth={true}
                       duration={500}
                       className={`text-xl hover:text-primary font-poppins font-semibold ${
@@ -79,11 +76,11 @@ function Navbar() {
                       }`}
                     >
                       About
-                    </Link>
+                    </ScrollLink>
                   </li>
                   <li>
-                    <Link
-                      to="skills"
+                    <ScrollLink
+                      to="Skills"
                       smooth={true}
                       duration={500}
                       className={`text-xl hover:text-primary font-poppins font-semibold ${
@@ -91,11 +88,11 @@ function Navbar() {
                       }`}
                     >
                       Skills
-                    </Link>
+                    </ScrollLink>
                   </li>
                   <li>
-                    <Link
-                      to="resume"
+                    <ScrollLink
+                      to="Experience"
                       smooth={true}
                       duration={500}
                       className={`text-xl hover:text-primary font-poppins font-semibold ${
@@ -103,11 +100,11 @@ function Navbar() {
                       }`}
                     >
                       Resume
-                    </Link>
+                    </ScrollLink>
                   </li>
                   <li>
-                    <Link
-                      to="project"
+                    <ScrollLink
+                      to="Projects"
                       smooth={true}
                       duration={500}
                       className={`text-xl hover:text-primary font-poppins font-semibold ${
@@ -115,11 +112,11 @@ function Navbar() {
                       }`}
                     >
                       Project
-                    </Link>
+                    </ScrollLink>
                   </li>
                   <li>
-                    <Link
-                      to="contact"
+                    <ScrollLink
+                      to="Footer"
                       smooth={true}
                       duration={500}
                       className={`text-xl hover:text-primary font-poppins font-semibold ${
@@ -127,7 +124,7 @@ function Navbar() {
                       }`}
                     >
                       Contact
-                    </Link>
+                    </ScrollLink>
                   </li>
                 </ul>
               </div>
@@ -193,46 +190,6 @@ function Navbar() {
         </div>
 
         {/* mobile side */}
-        <div className="fixed bottom-2 flex sm:hidden lg:bottom-8 w-full overflow-hidden z-50">
-          <div className="w-full mr-6 bg-primary h-[60px] rounded-full max-auto px-5 flex justify-between text-white text-3xl">
-            <Link
-              to="home"
-              activeClass="active"
-              smooth={true}
-              duration={500}
-              spy={true}
-              offset={-200}
-              className="cursor-pointer w-[60px] h-[60px] flex items-center justify-center hover:text-black"
-            >
-              <BiUser />
-            </Link>
-
-            <Link
-              to="about"
-              smooth={true}
-              duration={500}
-              className="cursor-pointer w-[60px] h-[60px] flex items-center justify-center hover:text-black"
-            >
-              <BsClipboardData />
-            </Link>
-            <Link
-              to="skills"
-              smooth={true}
-              duration={500}
-              className="cursor-pointer w-[60px] h-[60px] flex items-center justify-center hover:text-black"
-            >
-              <MdLibraryBooks />
-            </Link>
-            <Link
-              to="projects"
-              smooth={true}
-              duration={500}
-              className="cursor-pointer w-[60px] h-[60px] flex items-center justify-center hover:text-black"
-            >
-              <CgBriefcase />
-            </Link>
-          </div>
-        </div>
       </nav>
     </div>
   );

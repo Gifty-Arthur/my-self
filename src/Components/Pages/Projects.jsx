@@ -37,7 +37,7 @@ function Projects() {
   const { theme } = useContext(ThemeContext);
 
   return (
-    <div>
+    <section id="Projects">
       <div
         className={`${
           theme === "dark" ? "bg-tertiary text-white" : "bg-custom3 text-black"
@@ -123,7 +123,7 @@ function Projects() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

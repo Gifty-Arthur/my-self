@@ -32,7 +32,7 @@ function Experience() {
   });
 
   return (
-    <div>
+    <section id="Experience">
       <div
         className={`${
           theme === "dark" ? "bg-tertiary text-white" : "bg-custom3 text-black"
@@ -232,7 +232,7 @@ function Experience() {
           </motion.div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

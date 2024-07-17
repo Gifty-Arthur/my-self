@@ -7,6 +7,7 @@ import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 import { FaInstagram, FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 
 const fadeIn = (direction = "up", duration = 0.7) => {
   return {
@@ -31,7 +32,8 @@ function Home() {
   const { theme } = useContext(ThemeContext);
 
   return (
-    <div
+    <section
+      id="Home"
       className={`${
         theme === "dark" ? "bg-tertiary text-white" : "bg-custom3 text-black"
       }`}
@@ -229,7 +231,7 @@ function Home() {
           <About />
         </div> */}
       </div>
-    </div>
+    </section>
   );
 }
 

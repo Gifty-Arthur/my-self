@@ -60,7 +60,7 @@ function Skills() {
   }, [controls, inView]);
 
   return (
-    <div>
+    <section id="Skills">
       <div
         className={`${
           theme === "dark" ? "bg-tertiary text-white" : "bg-custom3 text-black"
@@ -189,7 +189,7 @@ function Skills() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 
