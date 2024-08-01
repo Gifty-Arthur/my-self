@@ -26,7 +26,7 @@ function Experience() {
   };
   const { theme } = useContext(ThemeContext);
   // eslint-disable-next-line no-unused-vars
-  const { ref, inView } = useInView({
+  useInView({
     triggerOnce: false, // Animate only once when the element comes into view
     threshold: 0.5, // Trigger the animation when 10% of the element is in view
   });
