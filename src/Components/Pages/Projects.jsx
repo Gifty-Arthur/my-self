@@ -9,6 +9,8 @@ import { useInView } from "react-intersection-observer";
 //images
 import bg from "../../assets/Images/bg.png";
 
+import bg2 from "../../assets/Images/bg2.png";
+
 function Projects() {
   const fadeIn = (direction = "up", duration = 0.7) => {
     return {
@@ -98,11 +100,11 @@ function Projects() {
                   <div className="flex flex-wrap mt-4 ml-8" ref={ref}>
                     {inView && (
                       <motion.div className="text-6xl text-primary font-poppins">
-                        <CountUp end={10} duration={9} />
+                        <CountUp end={5} duration={9} />
                       </motion.div>
                     )}
                     <span className="text-base md:text-xl ml-4">
-                      Satisfy
+                      Satisfied
                       <br />
                       client
                     </span>
@@ -111,13 +113,31 @@ function Projects() {
               </div>
               {/* bg */}
 
+              <div className="">
+                <a
+                  href="https://grocery-website-zeta.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <div className="border rounded-lg w-[] 700pxh-[489px] bg-primary-800 md:mt-20 mt-10">
+                    <p className="mt-1 text-2xl font-bold ml-4">
+                      E-commerce website for farmers
+                    </p>
+                    <img src={bg} alt="" className=" mt-10 rounded-md" />
+                  </div>
+                </a>
+              </div>
+
               <a
                 href="https://grocery-website-zeta.vercel.app/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <div className="border rounded-lg w-[] 700pxh-[489px] bg-primary-800 md:mt-20 mt-10">
-                  <img src={bg} alt="" className=" mt-10 rounded-md" />
+                  <p className="mt-1 text-2xl font-bold ml-4">
+                    Charity website
+                  </p>
+                  <img src={bg2} alt="" className=" mt-10 rounded-md" />
                 </div>
               </a>
             </div>

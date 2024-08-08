@@ -161,6 +161,33 @@ function Skills() {
                       ></motion.div>
                     </div>
                   </div>
+                  {/* 2222 */}
+                  <div className="mt-6">
+                    <p className="mt-2 text-md font-poppins">Nextjs</p>
+                    <div className="md:w-[603px] bg-white-500 w-full rounded-full h-3 dark:bg-white ">
+                      <motion.div
+                        className="bg-[#73A4CF] h-3 rounded-full w-[323px] md:w-[687px]"
+                        initial="hidden"
+                        animate={controls}
+                        variants={reactVariants}
+                        ref={ref}
+                      ></motion.div>
+                    </div>
+                  </div>
+
+                  {/* 333 */}
+                  <div className="mt-6">
+                    <p className="mt-2 text-md font-poppins">TypeScript</p>
+                    <div className="md:w-[603px] bg-white-500 w-full rounded-full h-3 dark:bg-white ">
+                      <motion.div
+                        className="bg-[#73A4CF] h-3 rounded-full w-[323px] md:w-[789px]"
+                        initial="hidden"
+                        animate={controls}
+                        variants={reactVariants}
+                        ref={ref}
+                      ></motion.div>
+                    </div>
+                  </div>
                   {/* 4th */}
                   <div className="mt-6">
                     <p className="mt-2 text-md font-poppins">TailwindCSS</p>

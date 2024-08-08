@@ -168,7 +168,7 @@ function Experience() {
                     </span>{" "}
                     <span>
                       <TypeAnimation
-                        sequence={["EXperience", 1000]}
+                        sequence={["Experience", 1000]}
                         speed={50}
                         wrapper="span"
                         repeat={Infinity}
@@ -183,19 +183,12 @@ function Experience() {
                   <div className="flex flex-row">
                     <div className="flex flex-col gap-28 mt-20">
                       <p
-                        className={`timeline-date md:text-2xl text-sm font-poppins md:mt-12 mt-14 ${
+                        className={`timeline-date md:text-2xl text-sm font-poppins md:mt-16 mt-14 ${
                           theme === "dark" ? "border-black" : "border-gray-200"
                         }`}
                       >
                         2019-2023
                       </p>
-                      <div className="text-center">
-                        <p className="timeline-date md:text-2xl text-sm font-poppins md:mt-24 ">
-                          July-Till
-                          <br />
-                          2024
-                        </p>
-                      </div>
                     </div>
                     <div
                       className={`timeline mt-20 flex flex-col gap-16${
@@ -208,19 +201,6 @@ function Experience() {
                           <span className="text-primary md:mt-0">OddHaus</span>
                           <h3 className="font-bold text-secondary">
                             Internship
-                          </h3>
-                        </div>
-                      </div>
-                      <div className="relative">
-                        <div
-                          className="dot md:-mt-0 -mt-4 md:-left-2.5 md:h-4 md:w-4"
-                          title="current event"
-                        >
-                          <div className="dot absolute -top-1.5 -left-1 animate-ping "></div>
-                        </div>
-                        <div className="pl-8 md:text-3xl text-md">
-                          <h3 className="font-bold font-poppins md:mt-12 mt-8 text-[#D534A5]">
-                            Freelancer
                           </h3>
                         </div>
                       </div>
