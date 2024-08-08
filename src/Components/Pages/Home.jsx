@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable react/no-unescaped-entities */
-import hero from "../../assets/Images/hero.png";
+import her from "../../assets/Images/her.png";
 import React, { useContext } from "react";
 import { ThemeContext } from "./ThemeContext";
 import { TypeAnimation } from "react-type-animation";
@@ -44,12 +44,12 @@ function Home() {
         }`}
       >
         <div className="container">
-          <div className="md:flex flex-row gap-20">
+          <div className="md:flex items-center justify-between">
             <div className="flex-col flex">
               <motion.img
-                src={hero}
+                src={her}
                 alt=""
-                className="mt-20 flex md:hidden"
+                className="mt-20 flex md:hidden w-full "
                 variants={fadeIn("up", 0.4)}
                 initial="hidden"
                 whileInView={"show"}
@@ -65,13 +65,13 @@ function Home() {
                 Hi,
               </motion.h1>
               <motion.h1
-                className="text-[36px] font-poppins lg:text-[50px] font-bold"
+                className="text-[36px] font-poppins lg:text-4xl font-bold"
                 variants={fadeIn("up", 0.3)}
                 initial="hidden"
                 animate="show"
               >
                 I am&nbsp;
-                <span className="text-[36px] font-poppins lg:text-[50px] font-extrabold">
+                <span className="text-[36px] font-poppins lg:text-4xl font-extrabold">
                   <TypeAnimation
                     sequence={["Gifty", 2000, "", "Gifty", 2000]}
                     speed={50}
@@ -83,7 +83,7 @@ function Home() {
                 </span>
               </motion.h1>
               <motion.h1
-                className="text-[36px] font-poppins lg:text-[50px] font-extrabold"
+                className="text-[36px] font-poppins lg:text-4xl font-extrabold"
                 variants={fadeIn("up", 0.3)}
                 initial="hidden"
                 whileInView={"show"}
@@ -100,7 +100,7 @@ function Home() {
               </motion.h1>
 
               <motion.h1
-                className="lg:text-[40px] text-[26px] font-semibold font-poppins"
+                className="lg:text-3xl text-[26px] font-semibold font-poppins"
                 variants={fadeIn("up", 0.5)}
                 initial="hidden"
                 whileInView={"show"}
@@ -109,7 +109,7 @@ function Home() {
                 Frontend Web Developer
               </motion.h1>
               <motion.p
-                className={`font-poppins text-md md:text-[21px] ${
+                className={`font-poppins text-md md:text-[21px] mt-2 ${
                   theme === "dark" ? "text-[#B0B0B4]" : "text-black"
                 }`}
                 variants={fadeIn("up", 0.7)}
@@ -118,14 +118,14 @@ function Home() {
                 viewport={{ once: false, amount: 0.7 }}
               >
                 Ready to boost your brand and grow your business? <br />
-                Let's team up! As a skilled developer, I'm here to help <br />
-                turn your vision into reality.
+                Let's team up! As a skilled developer, I'm here to help
+                <br /> turn your vision into reality.
                 <span className="text-primary"> Let's make it happen!.</span>
               </motion.p>
 
               <div>
                 <motion.button
-                  className="relative group w-[188px] h-[52px] bg-primary md:mt-20 mt-8 before:absolute before:inset-0 before:bg-red-700 before:scale-x-0 before:origin-right before:transition before:duration-300 hover:before:scale-x-100 hover:before:origin-left"
+                  className="relative group w-[188px] h-[52px] bg-primary md:mt-12 mt-8 before:absolute before:inset-0 before:bg-red-700 before:scale-x-0 before:origin-right before:transition before:duration-300 hover:before:scale-x-100 hover:before:origin-left"
                   variants={fadeIn("up", 0.7)}
                   initial="hidden"
                   whileInView={"show"}
@@ -181,15 +181,15 @@ function Home() {
             </div>
             <div>
               <motion.img
-                src={hero}
+                src={her}
                 alt=""
-                className="md:w-[514px] md:h-[515px] w-full mt-16 ml-18 md:flex hidden"
+                className="md:w-[314px] md:h-[315px] w-full mt-16 ml-18 md:flex hidden"
                 variants={fadeIn("down", 0.5)}
                 initial="hidden"
                 whileInView={"show"}
               />
 
-              <div className="flex-wrap gap-6 lg:mt-16 lg:justify-center sm:flex hidden">
+              <div className="flex-wrap gap-6 lg:mt-20 lg:justify-center sm:flex hidden">
                 <a
                   href="https://www.instagram.com/tiitt_y?igsh=MTMzZG43ZmFianBxYw%3D%3D&utm_source=qr"
                   target="_blank"

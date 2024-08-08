@@ -1,6 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 // images
-import hero from "../../assets/Images/hero.png";
+import her from "../../assets/Images/her.png";
 
 // eslint-disable-next-line no-unused-vars
 import React, { useContext } from "react";
@@ -51,15 +51,15 @@ function About() {
         <div className="mx-auto container">
           <div ref={ref} className="md:flex flex-row   md:gap-32">
             <motion.img
-              src={hero}
+              src={her}
               alt=""
-              className="md:mt-24 md:pt-0  pt-20"
+              className="md:mt-24 md:pt-0  pt-20 md:w-[314px] md:h-[315px]"
               variants={fadeIn("up", 0.9)}
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.3 }}
             />
-            <div className="flex flex-col  md:mt-28">
+            <div className="flex flex-col  md:mt-12">
               <motion.h1
                 className="lg:text-[50px] text-primary text-3xl  mt-20 md:mt-28 font-poppins font-semibold"
                 variants={fadeIn("up", 0.5)}

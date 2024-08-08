@@ -102,8 +102,9 @@ function Projects() {
                       </motion.div>
                     )}
                     <span className="text-base md:text-xl ml-4">
-                      Years of <br />
-                      Experience
+                      Satisfy
+                      <br />
+                      client
                     </span>
                   </div>
                 </div>

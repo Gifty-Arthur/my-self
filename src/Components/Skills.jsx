@@ -115,7 +115,7 @@ function Skills() {
                 >
                   <p className=" text-md font-poppins">HTML/CSS</p>
                   <motion.div
-                    className="md:w-[753px] bg-white-500 w-full rounded-full h-3 dark:bg-white mt-2"
+                    className="md:w-[603px] bg-white-500 w-full rounded-full h-3 dark:bg-white mt-2"
                     variants={fadeIn("up", 0.9)}
                     initial="hidden"
                     whileInView={"show"}
@@ -133,7 +133,7 @@ function Skills() {
                   <div className="mt-6">
                     <p className=" text-md font-poppins">JavaScript</p>
                     <motion.div
-                      className="md:w-[753px] bg-white-500 w-full rounded-full h-3 dark:bg-white "
+                      className="md:w-[603px] bg-white-500 w-full rounded-full h-3 dark:bg-white "
                       variants={fadeIn("up", 0.7)}
                       initial="hidden"
                       whileInView={"show"}
@@ -151,7 +151,7 @@ function Skills() {
                   {/* 3rd bar */}
                   <div className="mt-6">
                     <p className="mt-2 text-md font-poppins">React</p>
-                    <div className="md:w-[753px] bg-white-500 w-full rounded-full h-3 dark:bg-white ">
+                    <div className="md:w-[603px] bg-white-500 w-full rounded-full h-3 dark:bg-white ">
                       <motion.div
                         className="bg-[#73A4CF] h-3 rounded-full w-[323px] md:w-[687px]"
                         initial="hidden"
@@ -164,7 +164,7 @@ function Skills() {
                   {/* 4th */}
                   <div className="mt-6">
                     <p className="mt-2 text-md font-poppins">TailwindCSS</p>
-                    <div className="md:w-[753px] bg-white-500 w-full rounded-full h-3 dark:bg-white ">
+                    <div className="md:w-[603px] bg-white-500 w-full rounded-full h-3 dark:bg-white ">
                       <motion.div
                         className="bg-[#73A4CF] h-3 rounded-full w-[323px] md:w-[687px]"
                         initial="hidden"
@@ -179,7 +179,7 @@ function Skills() {
               <motion.img
                 src={skill}
                 alt=""
-                className=" sm:w-[338px]  md:w-[438px] md:h-[438px] md:mt-0 mt-12 "
+                className=" sm:w-[338px]  md:w-[338px] md:h-[300px]   md:mt-10 mt-12 "
                 variants={fadeIn("up", 0.9)}
                 initial="hidden"
                 whileInView={"show"}
