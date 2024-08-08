@@ -129,7 +129,7 @@ function Projects() {
               </div>
 
               <a
-                href="https://grocery-website-zeta.vercel.app/"
+                href="https://charity-website-omega.vercel.app/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
