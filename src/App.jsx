@@ -5,6 +5,8 @@ import "./App.css";
 import Navbar from "./Components/Pages/Navbar";
 import { ThemeProvider } from "./Components/Pages/ThemeContext";
 import Home from "./Components/Pages/Home";
+import About from "./Components/Pages/About";
+import Projects from "./Components/Pages/Projects";
 
 function App() {
   return (
@@ -12,6 +14,8 @@ function App() {
       <div>
         <Navbar />
         <Home />
+        <Projects />
+        <About />
       </div>
     </ThemeProvider>
   );

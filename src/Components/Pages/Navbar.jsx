@@ -9,7 +9,7 @@ const Navbar = () => {
   return (
     <nav>
       {/* #8C37EE */}
-      <div className="nav-container shadow-lg w-full bg-white h-[110px]">
+      <div className="nav-container shadow-lg w-full bg-white h-[110px] fixed top-0 left-0 z-50">
         <div className=" flex justify-between items-center h-full w-full px-4">
           <div>
             <img

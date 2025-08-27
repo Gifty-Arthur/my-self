@@ -1,7 +1,39 @@
 import React from "react";
+import { useTypewriter, Cursor } from "react-simple-typewriter";
+
+import videoBg from "../../assets/Images/bgee.mp4"; // Make sure this path is correct
 
 const Home = () => {
-  return <div>hi</div>;
+  const [text] = useTypewriter({
+    words: ["", "A Frontend Developer."],
+    loop: {}, // Loops indefinitely
+    typeSpeed: 120,
+    deleteSpeed: 80,
+  });
+  return (
+    // Main container
+    <div className="relative w-full h-screen overflow-hidden ">
+      <video
+        src={videoBg}
+        autoPlay
+        loop
+        muted
+        className="absolute top-0 left-0 w-full  object-cover z-[-2] "
+      />
+      <div className="absolute top-0 left-0 w-full h-full bg-black opacity-60 z-[-1]"></div>
+
+      <div className="relative flex flex-col justify-center  h-full z-10 mt-4">
+        <h1 className="text-white text-4xl md:text-6xl font-poppins px-10 text-center">
+          Hi, I'm Gifty 👋
+        </h1>
+        <h2 className="text-white text-5xl font-poppins px-10 text-center">
+          <span>{text}</span>
+          <Cursor cursorStyle="|" />
+        </h2>{" "}
+        <p></p>
+      </div>
+    </div>
+  );
 };
 
 export default Home;
