@@ -1,0 +1,27 @@
+/*
+ This creates the keyframes for a horizontal (Y-axis) spin.
+*/
+@keyframes spin-y {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
+
+/*
+ This applies the horizontal spin animation.
+ You can change the duration (e.g., 5s) to make it faster or slower.
+*/
+.animate-spin-y {
+  animation: spin-y 5s linear infinite;
+}
+
+/*
+ This is important! It adds perspective to the parent container,
+ which makes the 3D rotation visible and gives it depth.
+*/
+.perspective-container {
+  perspective: 1000px;
+}

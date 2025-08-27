@@ -11,6 +11,7 @@ function App() {
     <ThemeProvider>
       <div>
         <Navbar />
+        <Home />
       </div>
     </ThemeProvider>
   );

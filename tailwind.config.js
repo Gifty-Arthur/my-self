@@ -7,14 +7,12 @@ export default {
   ],
   theme: {
     extend: {
-      colors: {
-        primary: '#FF4321',
-        tertiary: '#212121',
-        secondary: '#73A4CF',
-        custom1: "#1E1E1E",
-        custom2: "#212121",
-        custom3: "#EDF2FC",
+          colors: {
+       'logo-dark-purple': '#521383', // Darkest shade
+        'logo-primary-purple': '#8C37EE', // Mid-tone vibrant purple
+        'logo-bright-purple': '#E589FF'
       },
+
       fontFamily: {
         poppins: ['Poppins', 'sans-serif'],
       },
