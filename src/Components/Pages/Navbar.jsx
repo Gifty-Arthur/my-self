@@ -28,6 +28,15 @@ const Navbar = () => {
                 Home
               </a>
             </li>
+            <li className="py-2">
+              <a
+                href="/projects"
+                className="text-lg text-gray-700 hover:text-purple-400 font-medium" // Fixed text color
+                onClick={toggleMenu}
+              >
+                Projects
+              </a>
+            </li>
             <li>
               <a
                 href="/about"
@@ -36,14 +45,7 @@ const Navbar = () => {
                 About
               </a>
             </li>
-            <li>
-              <a
-                href="/projects"
-                className="text-lg text-gray-700 hover:text-purple-600 font-medium"
-              >
-                Projects
-              </a>
-            </li>
+
             <li>
               <a
                 href="/contact"
@@ -61,7 +63,7 @@ const Navbar = () => {
               className=" hidden md:flex bg-gradient-to-r from-logo-bright-purple via-logo-primary-purple to-logo-dark-purple text-white px-4 py-2 font-poppins rounded-sm hover:from-logo-primary-purple hover:via-logo-bright-purple hover:animate-bounce hover:to-logo-bright-purple transition-all duration-300"
             >
               Download CV
-              <FaArrowDown className="inline-block ml-2 hover:animate-bounce  " />
+              <FaArrowDown className="inline-block ml-2 hover:animate-bounce mt-1 " />
             </a>
           </button>
           {/* mobile */}
@@ -99,15 +101,6 @@ const Navbar = () => {
           </li>
           <li className="py-2">
             <a
-              href="/about"
-              className="text-lg text-gray-700 hover:text-purple-400 font-medium" // Fixed text color
-              onClick={toggleMenu}
-            >
-              About
-            </a>
-          </li>
-          <li className="py-2">
-            <a
               href="/projects"
               className="text-lg text-gray-700 hover:text-purple-400 font-medium" // Fixed text color
               onClick={toggleMenu}
@@ -115,6 +108,16 @@ const Navbar = () => {
               Projects
             </a>
           </li>
+          <li className="py-2">
+            <a
+              href="/about"
+              className="text-lg text-gray-700 hover:text-purple-400 font-medium" // Fixed text color
+              onClick={toggleMenu}
+            >
+              About
+            </a>
+          </li>
+
           <li className="py-2">
             <a
               href="/contact"
