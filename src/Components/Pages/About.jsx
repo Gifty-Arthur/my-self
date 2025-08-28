@@ -34,7 +34,7 @@ const About = () => {
               dedicated to writing clean, maintainable, and high-performance
               code that brings a user interface to life.
             </p>
-            <div className="bg-white w-[164px] h-[52px] rounded-lg shadow-lg flex-shrink-0 mx-auto mt-6 md:mt-0 ">
+            <div className="bg-white w-[164px] h-[52px] rounded-lg shadow-lg flex-shrink-0 mt-6 ml-24 md:mt-3 ">
               <div className="flex justify-around items-center mt-5 py-2 ">
                 <a
                   href="https://github.com/Gifty-Arthur"
@@ -53,7 +53,7 @@ const About = () => {
                   />
                 </a>
                 <a
-                  href=""
+                  href="https://www.linkedin.com/in/gifty-arthur-95316a1b5/"
                   target="_blank"
                   rel="noopener noreferrer  transition-all duration-300 ease-in-out hover:scale-105 hover:-translate-y-1 hover:shadow-xl"
                 >

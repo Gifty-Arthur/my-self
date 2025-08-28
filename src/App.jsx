@@ -3,21 +3,20 @@
 import React from "react";
 import "./App.css";
 import Navbar from "./Components/Pages/Navbar";
-import { ThemeProvider } from "./Components/Pages/ThemeContext";
 import Home from "./Components/Pages/Home";
 import About from "./Components/Pages/About";
 import Projects from "./Components/Pages/Projects";
+import Contact from "./Components/Pages/Contact";
 
 function App() {
   return (
-    <ThemeProvider>
-      <div>
-        <Navbar />
-        <Home />
-        <Projects />
-        <About />
-      </div>
-    </ThemeProvider>
+    <div>
+      <Navbar />
+      <Home />
+      <Projects />
+      <About />
+      <Contact />
+    </div>
   );
 }
 
