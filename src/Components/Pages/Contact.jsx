@@ -51,7 +51,9 @@ const Contact = () => {
           <div className="max-w-6xl mx-auto md:flex bg-white rounded-lg shadow-xl overflow-hidden">
             {/* Contact Information Section */}
             <div className="md:w-1/3 bg-purple-600 text-white p-8">
-              <h2 className="text-2xl font-bold mb-6">Contact Information</h2>
+              <h2 className="text-2xl font-bold mb-6 mt-10">
+                Contact Information
+              </h2>
               <div className="space-y-4">
                 <div className="flex items-center">
                   <FiPhone className="w-5 h-5 mr-3" />
