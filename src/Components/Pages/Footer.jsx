@@ -11,7 +11,7 @@ const Footer = () => {
         {/* Logo Section */}
         <div className="text-xl font-bold">
           {/* You can replace this text with your actual logo image or SVG */}
-          <img src={logo} alt="Logo" className="h-10 w-auto" />
+          <img src={logo} alt="Logo" className="h-10 w-auto bg-gray-800" />
         </div>
 
         {/* Copyright Section */}

@@ -9,10 +9,13 @@ import { DiGithub } from "react-icons/di";
 
 const About = () => {
   return (
-    <section id="about" className="py-20 h-screen ">
+    <section
+      id="about"
+      className="py-20 min-h-screen flex flex-col justify-center"
+    >
       <ScrollAnimation>
         <div className="text-center">
-          <h1 className="text-4xl md:text-5xl mt-18 font-bold text-gray-800">
+          <h1 className="text-4xl md:text-5xl mt-18 md:mr-0 mr-8 font-bold text-gray-800">
             About Me
           </h1>
           {/* You can add your 'About Me' content here */}
@@ -62,7 +65,7 @@ const About = () => {
                     className="text-purple-600  transition-all duration-300 ease-in-out hover:scale-105 hover:-translate-y-1 hover:shadow-xl"
                   />
                 </a>
-                <a href="">
+                <a href="https://www.instagram.com/tiitt_y/">
                   <BsInstagram
                     size={22}
                     className="text-purple-600  transition-all duration-300 ease-in-out hover:scale-105 hover:-translate-y-1 hover:shadow-xl"

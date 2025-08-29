@@ -42,7 +42,10 @@ const projectsData = [
 
 const Projects = () => {
   return (
-    <section id="projects" className="py-20 bg-gray-50">
+    <section
+      id="projects"
+      className="py-20 bg-gray-50 min-h-screen flex flex-col justify-center"
+    >
       <ScrollAnimation>
         <div className="text-center px-4">
           <h1 className="text-4xl md:text-5xl font-bold text-gray-800">
