@@ -8,7 +8,7 @@ const Navbar = () => {
   const toggleMenu = () => setIsOpen(!isOpen);
 
   const navLinkClasses =
-    "text-lg text-gray-700 hover:text-purple-600 font-medium cursor-pointer transition-colors duration-300";
+    "text-lg text-gray-700 hover:text-purple-600 font-medium cursor-pointer  transition-colors duration-300";
   const activeLinkClasses = "text-purple-600 font-bold";
 
   const links = [
@@ -31,7 +31,7 @@ const Navbar = () => {
           </div>
 
           {/* Desktop Menu */}
-          <ul className="items-center space-x-8 hidden md:flex">
+          <ul className="items-center space-x-8 hidden md:flex text-white">
             {links.map((link) => (
               <li key={link.to}>
                 <Link

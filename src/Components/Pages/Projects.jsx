@@ -6,6 +6,7 @@ import s2 from "../../assets/Images/s2.png";
 import s4 from "../../assets/Images/s4.png";
 import s6 from "../../assets/Images/s6.png";
 import s9 from "../../assets/Images/s8.png";
+import s from "../../assets/Images/s.png";
 
 const projectsData = [
   {
@@ -37,6 +38,11 @@ const projectsData = [
     img: s9,
     link: "https://agency-website-mu-three.vercel.app/",
     name: "Donation Platform",
+  },
+  {
+    img: s,
+    link: "https://worksync-blush.vercel.app/",
+    name: "Leave Management System",
   },
 ];
 
