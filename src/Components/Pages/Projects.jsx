@@ -7,6 +7,7 @@ import s4 from "../../assets/Images/s4.png";
 import s6 from "../../assets/Images/s6.png";
 import s9 from "../../assets/Images/s8.png";
 import s from "../../assets/Images/s.png";
+import nabora from "../../assets/Images/nabora.png"
 
 const projectsData = [
   {
@@ -43,6 +44,11 @@ const projectsData = [
     img: s,
     link: "https://worksync-blush.vercel.app/",
     name: "Leave Management System",
+  },
+  {
+    img: nabora,
+    link: "https://nabora-3qv3.vercel.app/",
+    name: "Nutrition Website",
   },
 ];
 
